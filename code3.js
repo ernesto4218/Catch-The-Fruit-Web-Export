@@ -5,6 +5,9 @@ gdjs.SplashCode.GDNewSpriteObjects2= [];
 gdjs.SplashCode.conditionTrue_0 = {val:false};
 gdjs.SplashCode.condition0IsTrue_0 = {val:false};
 gdjs.SplashCode.condition1IsTrue_0 = {val:false};
+gdjs.SplashCode.conditionTrue_1 = {val:false};
+gdjs.SplashCode.condition0IsTrue_1 = {val:false};
+gdjs.SplashCode.condition1IsTrue_1 = {val:false};
 
 
 gdjs.SplashCode.asyncCallback18421316 = function (runtimeScene, asyncObjectsList) {
@@ -25,7 +28,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.SplashCode.userFunc0xdf4df0 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xba5f90 = function(runtimeScene) {
 "use strict";
 // Check for the presence of the iframe element
 if (window.self !== window.top) {
@@ -48,12 +51,12 @@ gdjs.SplashCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.SplashCode.userFunc0xdf4df0(runtimeScene);
+gdjs.SplashCode.userFunc0xba5f90(runtimeScene);
 
 }
 
 
-};gdjs.SplashCode.userFunc0xdeb418 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xc55278 = function(runtimeScene) {
 "use strict";
 // Get the current URL of the game
 var gameURL = window.location.href;
@@ -97,7 +100,7 @@ gdjs.SplashCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.SplashCode.userFunc0xdeb418(runtimeScene);
+gdjs.SplashCode.userFunc0xc55278(runtimeScene);
 
 }
 
@@ -144,7 +147,12 @@ gdjs.SplashCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
+gdjs.SplashCode.condition0IsTrue_0.val = false;
 {
+{gdjs.SplashCode.conditionTrue_1 = gdjs.SplashCode.condition0IsTrue_0;
+gdjs.SplashCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(18465900);
+}
+}if (gdjs.SplashCode.condition0IsTrue_0.val) {
 
 { //Subevents
 gdjs.SplashCode.eventsList2(runtimeScene);} //End of subevents
