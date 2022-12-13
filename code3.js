@@ -5,9 +5,6 @@ gdjs.SplashCode.GDNewSpriteObjects2= [];
 gdjs.SplashCode.conditionTrue_0 = {val:false};
 gdjs.SplashCode.condition0IsTrue_0 = {val:false};
 gdjs.SplashCode.condition1IsTrue_0 = {val:false};
-gdjs.SplashCode.conditionTrue_1 = {val:false};
-gdjs.SplashCode.condition0IsTrue_1 = {val:false};
-gdjs.SplashCode.condition1IsTrue_1 = {val:false};
 
 
 gdjs.SplashCode.asyncCallback18421316 = function (runtimeScene, asyncObjectsList) {
@@ -28,7 +25,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.SplashCode.userFunc0xf758a0 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xdf4df0 = function(runtimeScene) {
 "use strict";
 // Check for the presence of the iframe element
 if (window.self !== window.top) {
@@ -51,33 +48,56 @@ gdjs.SplashCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.SplashCode.userFunc0xf758a0(runtimeScene);
+gdjs.SplashCode.userFunc0xdf4df0(runtimeScene);
 
 }
 
 
-};gdjs.SplashCode.userFunc0xc11768 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xdeb418 = function(runtimeScene) {
 "use strict";
-if (localStorage.getItem("accessed") === "true") {
-  // If the link has already been accessed, show an error message
-  alert("Error: This link can only be accessed from one device per user");
-  localStorage.setItem("error", "This link can only be accessed from one device per user");
+// Get the current URL of the game
+var gameURL = window.location.href;
+
+// Create a variable to store the game tab
+var gameTab = null;
+
+// Check if the game tab is already open in the browser
+if(localStorage.getItem(gameURL) !== null) {
+// If the game tab is already open, get the tab object
+gameTab = JSON.parse(localStorage.getItem(gameURL));
+
+// Check if the tab is still open in the browser
+if(gameTab.closed) {
+// If the tab is closed, update the localStorage with the current tab object
+localStorage.setItem(gameURL, JSON.stringify(window));
 } else {
-  // If the link has not been accessed, check if the current URL is the specified link
-  if (window.location.href !== "https://ernesto4218.github.io/Catch-The-Fruit-Web-Export/") {
-    // If the current URL is not the specified link, allow the user to access it
-    localStorage.setItem("accessed", "true");
-    window.location.href = "https://ernesto4218.github.io/Catch-The-Fruit-Web-Export/";
-  }
+// If the tab is still open, show an error message and close the current tab
+alert("The game is already open in another tab. Please close that tab and try again.");
+window.close();
+}
+} else {
+// If the game tab is not open, update the localStorage with the current tab object
+localStorage.setItem(gameURL, JSON.stringify(window));
 }
 
+// Add an event listener to monitor the tab closing event
+window.addEventListener("beforeunload", function() {
+// Get the current tab object
+var currentTab = JSON.parse(localStorage.getItem(gameURL));
+
+// Set the closed property to true
+currentTab.closed = true;
+
+// Update the localStorage with the updated tab object
+localStorage.setItem(gameURL, JSON.stringify(currentTab));
+});
 };
 gdjs.SplashCode.eventsList2 = function(runtimeScene) {
 
 {
 
 
-gdjs.SplashCode.userFunc0xc11768(runtimeScene);
+gdjs.SplashCode.userFunc0xdeb418(runtimeScene);
 
 }
 
@@ -124,12 +144,7 @@ gdjs.SplashCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-gdjs.SplashCode.condition0IsTrue_0.val = false;
 {
-{gdjs.SplashCode.conditionTrue_1 = gdjs.SplashCode.condition0IsTrue_0;
-gdjs.SplashCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(18412636);
-}
-}if (gdjs.SplashCode.condition0IsTrue_0.val) {
 
 { //Subevents
 gdjs.SplashCode.eventsList2(runtimeScene);} //End of subevents
