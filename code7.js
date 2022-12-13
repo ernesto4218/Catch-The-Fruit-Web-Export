@@ -462,7 +462,7 @@ if (gdjs.RewardCode.condition3IsTrue_0.val) {
 }
 
 
-};gdjs.RewardCode.userFunc0xc57f90 = function(runtimeScene) {
+};gdjs.RewardCode.userFunc0x1013a60 = function(runtimeScene) {
 "use strict";
 //get the current time on the scene
 var currentdatevar = runtimeScene.getVariables().get("CurrentDate").getAsString();
@@ -502,7 +502,7 @@ gdjs.RewardCode.eventsList8 = function(runtimeScene) {
 {
 
 
-gdjs.RewardCode.userFunc0xc57f90(runtimeScene);
+gdjs.RewardCode.userFunc0x1013a60(runtimeScene);
 
 }
 
@@ -525,7 +525,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.RewardCode.userFunc0xc58728 = function(runtimeScene) {
+};gdjs.RewardCode.userFunc0x10137c8 = function(runtimeScene) {
 "use strict";
 //Get the current time
 var timenow = runtimeScene.getVariables().get("TimeNow").getAsString();
@@ -547,7 +547,7 @@ gdjs.RewardCode.eventsList10 = function(runtimeScene) {
 {
 
 
-gdjs.RewardCode.userFunc0xc58728(runtimeScene);
+gdjs.RewardCode.userFunc0x10137c8(runtimeScene);
 
 }
 
