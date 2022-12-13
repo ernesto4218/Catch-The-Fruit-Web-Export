@@ -169,7 +169,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.LoginCode.userFunc0x1011610 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0xbf6c18 = function(runtimeScene) {
 "use strict";
 // Get the current URL of the game
 var gameURL = window.location.href;
@@ -213,12 +213,12 @@ gdjs.LoginCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x1011610(runtimeScene);
+gdjs.LoginCode.userFunc0xbf6c18(runtimeScene);
 
 }
 
 
-};gdjs.LoginCode.userFunc0x1011760 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0xbf6dd0 = function(runtimeScene) {
 "use strict";
 // Check for the presence of the iframe element
 if (window.self !== window.top) {
@@ -241,7 +241,7 @@ gdjs.LoginCode.eventsList6 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x1011760(runtimeScene);
+gdjs.LoginCode.userFunc0xbf6dd0(runtimeScene);
 
 }
 
@@ -539,12 +539,7 @@ gdjs.LoginCode.eventsList4(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LoginCode.condition0IsTrue_0.val = false;
 {
-{gdjs.LoginCode.conditionTrue_1 = gdjs.LoginCode.condition0IsTrue_0;
-gdjs.LoginCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(13054276);
-}
-}if (gdjs.LoginCode.condition0IsTrue_0.val) {
 
 { //Subevents
 gdjs.LoginCode.eventsList5(runtimeScene);} //End of subevents
