@@ -81,23 +81,12 @@ gdjs.TestingCode.eventsList0 = function(runtimeScene) {
 }
 
 
-};gdjs.TestingCode.userFunc0x98ac40 = function(runtimeScene) {
+};gdjs.TestingCode.userFunc0x11d5ce0 = function(runtimeScene) {
 "use strict";
-// Check for the presence of the iframe element
-if (window.self !== window.top) {
-  // The website is being accessed inside an iframe, so check the value of the Referer header
-  var referer = document.referrer;
-
-  if (referer === "https://nesgentgames.com/") {
-    // The website is being accessed inside an iframe on the specified page, so allow access to the content
-  } else {
-    // The website is not being accessed inside an iframe on the specified page, so redirect the user to the specified URL
-    window.location.replace("https://www.w3schools.com/");
-  }
-} else {
-  // The website is not being accessed inside an iframe, so redirect the user to the specified URL
-  window.location.replace("https://www.w3schools.com/");
+if (window.location.href !== "https://www.w3schools.com/") {
+  window.location.href = "https://www.w3schools.com/";
 }
+
 };
 gdjs.TestingCode.eventsList1 = function(runtimeScene) {
 
@@ -113,7 +102,7 @@ gdjs.TestingCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.TestingCode.userFunc0x98ac40(runtimeScene);
+gdjs.TestingCode.userFunc0x11d5ce0(runtimeScene);
 
 }
 
