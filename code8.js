@@ -300,7 +300,7 @@ if (gdjs.HeartCode.condition1IsTrue_0.val) {
 }
 
 
-};gdjs.HeartCode.userFunc0xc37a38 = function(runtimeScene) {
+};gdjs.HeartCode.userFunc0x98bb10 = function(runtimeScene) {
 "use strict";
 //get the current time on the scene
 var currentdatevar = runtimeScene.getVariables().get("CurrentDate").getAsString();
@@ -340,12 +340,12 @@ gdjs.HeartCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.HeartCode.userFunc0xc37a38(runtimeScene);
+gdjs.HeartCode.userFunc0x98bb10(runtimeScene);
 
 }
 
 
-};gdjs.HeartCode.userFunc0xc37440 = function(runtimeScene) {
+};gdjs.HeartCode.userFunc0x9908c0 = function(runtimeScene) {
 "use strict";
 //Get the current time
 var timenow = runtimeScene.getVariables().get("TimeNow").getAsString();
@@ -367,7 +367,7 @@ gdjs.HeartCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.HeartCode.userFunc0xc37440(runtimeScene);
+gdjs.HeartCode.userFunc0x9908c0(runtimeScene);
 
 }
 

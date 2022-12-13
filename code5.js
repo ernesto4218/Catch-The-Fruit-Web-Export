@@ -175,7 +175,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.InviteCode.userFunc0x11d6f80 = function(runtimeScene) {
+};gdjs.InviteCode.userFunc0x982ef0 = function(runtimeScene) {
 "use strict";
 var time_var = runtimeScene.getVariables().get("time_var");
 var date_var = runtimeScene.getVariables().get("date_var");
@@ -530,7 +530,7 @@ gdjs.InviteCode.eventsList3(runtimeScene);} //End of subevents
 {
 
 
-gdjs.InviteCode.userFunc0x11d6f80(runtimeScene);
+gdjs.InviteCode.userFunc0x982ef0(runtimeScene);
 
 }
 

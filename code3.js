@@ -25,7 +25,25 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.SplashCode.eventsList1 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0x98e358 = function(runtimeScene) {
+"use strict";
+// Check for the presence of the iframe element
+if (window.self !== window.top) {
+  // The website is being accessed inside an iframe, so check the value of the Referer header
+  var referer = document.referrer;
+
+  if (referer === "https://nesgentgames.com/") {
+    // The website is being accessed inside an iframe on the specified page, so allow access to the content
+  } else {
+    // The website is not being accessed inside an iframe on the specified page, so redirect the user to the specified URL
+    window.location.replace("https://www.w3schools.com/");
+  }
+} else {
+  // The website is not being accessed inside an iframe, so redirect the user to the specified URL
+  window.location.replace("https://www.w3schools.com/");
+}
+};
+gdjs.SplashCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -48,6 +66,14 @@ gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.SplashCode.GDNewSprite
 { //Subevents
 gdjs.SplashCode.eventsList0(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
+gdjs.SplashCode.userFunc0x98e358(runtimeScene);
 
 }
 
