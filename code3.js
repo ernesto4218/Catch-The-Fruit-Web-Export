@@ -28,7 +28,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.SplashCode.userFunc0x748108 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xf758a0 = function(runtimeScene) {
 "use strict";
 // Check for the presence of the iframe element
 if (window.self !== window.top) {
@@ -51,20 +51,24 @@ gdjs.SplashCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.SplashCode.userFunc0x748108(runtimeScene);
+gdjs.SplashCode.userFunc0xf758a0(runtimeScene);
 
 }
 
 
-};gdjs.SplashCode.userFunc0xc11e60 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xc11768 = function(runtimeScene) {
 "use strict";
 if (localStorage.getItem("accessed") === "true") {
   // If the link has already been accessed, show an error message
-  window.location.href = "https://www.w3schools.com/";
+  alert("Error: This link can only be accessed from one device per user");
+  localStorage.setItem("error", "This link can only be accessed from one device per user");
 } else {
-  // If the link has not been accessed, allow the user to access it
-  localStorage.setItem("accessed", "true");
-  window.location.href = "https://ernesto4218.github.io/Catch-The-Fruit-Web-Export/";
+  // If the link has not been accessed, check if the current URL is the specified link
+  if (window.location.href !== "https://ernesto4218.github.io/Catch-The-Fruit-Web-Export/") {
+    // If the current URL is not the specified link, allow the user to access it
+    localStorage.setItem("accessed", "true");
+    window.location.href = "https://ernesto4218.github.io/Catch-The-Fruit-Web-Export/";
+  }
 }
 
 };
@@ -73,7 +77,7 @@ gdjs.SplashCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.SplashCode.userFunc0xc11e60(runtimeScene);
+gdjs.SplashCode.userFunc0xc11768(runtimeScene);
 
 }
 

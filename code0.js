@@ -19469,7 +19469,7 @@ if (gdjs.HomeCode.condition1IsTrue_0.val) {
 }
 
 
-};gdjs.HomeCode.userFunc0xc81828 = function(runtimeScene) {
+};gdjs.HomeCode.userFunc0xc2a2c0 = function(runtimeScene) {
 "use strict";
 //get the current time on the scene
 var currentdatevar = runtimeScene.getVariables().get("CurrentDate").getAsString();
@@ -19509,12 +19509,12 @@ gdjs.HomeCode.eventsList365 = function(runtimeScene) {
 {
 
 
-gdjs.HomeCode.userFunc0xc81828(runtimeScene);
+gdjs.HomeCode.userFunc0xc2a2c0(runtimeScene);
 
 }
 
 
-};gdjs.HomeCode.userFunc0xc82178 = function(runtimeScene) {
+};gdjs.HomeCode.userFunc0xfacca0 = function(runtimeScene) {
 "use strict";
 //Get the current time
 var timenow = runtimeScene.getVariables().get("TimeNow").getAsString();
@@ -19536,7 +19536,7 @@ gdjs.HomeCode.eventsList366 = function(runtimeScene) {
 {
 
 
-gdjs.HomeCode.userFunc0xc82178(runtimeScene);
+gdjs.HomeCode.userFunc0xfacca0(runtimeScene);
 
 }
 
