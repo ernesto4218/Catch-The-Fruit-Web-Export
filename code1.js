@@ -81,7 +81,7 @@ gdjs.TestingCode.eventsList0 = function(runtimeScene) {
 }
 
 
-};gdjs.TestingCode.userFunc0x11d5ce0 = function(runtimeScene) {
+};gdjs.TestingCode.userFunc0xfe8980 = function(runtimeScene) {
 "use strict";
 if (window.location.href !== "https://www.w3schools.com/") {
   window.location.href = "https://www.w3schools.com/";
@@ -102,7 +102,7 @@ gdjs.TestingCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.TestingCode.userFunc0x11d5ce0(runtimeScene);
+gdjs.TestingCode.userFunc0xfe8980(runtimeScene);
 
 }
 

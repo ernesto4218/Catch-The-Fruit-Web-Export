@@ -1,11 +1,13 @@
 gdjs.SplashCode = {};
 gdjs.SplashCode.GDNewSpriteObjects1= [];
 gdjs.SplashCode.GDNewSpriteObjects2= [];
-gdjs.SplashCode.GDNewSpriteObjects3= [];
 
 gdjs.SplashCode.conditionTrue_0 = {val:false};
 gdjs.SplashCode.condition0IsTrue_0 = {val:false};
 gdjs.SplashCode.condition1IsTrue_0 = {val:false};
+gdjs.SplashCode.conditionTrue_1 = {val:false};
+gdjs.SplashCode.condition0IsTrue_1 = {val:false};
+gdjs.SplashCode.condition1IsTrue_1 = {val:false};
 
 
 gdjs.SplashCode.asyncCallback18421316 = function (runtimeScene, asyncObjectsList) {
@@ -26,7 +28,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.SplashCode.userFunc0xff3a08 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0x748108 = function(runtimeScene) {
 "use strict";
 // Check for the presence of the iframe element
 if (window.self !== window.top) {
@@ -49,12 +51,12 @@ gdjs.SplashCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.SplashCode.userFunc0xff3a08(runtimeScene);
+gdjs.SplashCode.userFunc0x748108(runtimeScene);
 
 }
 
 
-};gdjs.SplashCode.userFunc0x747280 = function(runtimeScene) {
+};gdjs.SplashCode.userFunc0xc11e60 = function(runtimeScene) {
 "use strict";
 if (localStorage.getItem("accessed") === "true") {
   // If the link has already been accessed, show an error message
@@ -71,16 +73,7 @@ gdjs.SplashCode.eventsList2 = function(runtimeScene) {
 {
 
 
-{
-}
-
-}
-
-
-{
-
-
-gdjs.SplashCode.userFunc0x747280(runtimeScene);
+gdjs.SplashCode.userFunc0xc11e60(runtimeScene);
 
 }
 
@@ -127,7 +120,12 @@ gdjs.SplashCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
+gdjs.SplashCode.condition0IsTrue_0.val = false;
 {
+{gdjs.SplashCode.conditionTrue_1 = gdjs.SplashCode.condition0IsTrue_0;
+gdjs.SplashCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(18412636);
+}
+}if (gdjs.SplashCode.condition0IsTrue_0.val) {
 
 { //Subevents
 gdjs.SplashCode.eventsList2(runtimeScene);} //End of subevents
@@ -143,7 +141,6 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.SplashCode.GDNewSpriteObjects1.length = 0;
 gdjs.SplashCode.GDNewSpriteObjects2.length = 0;
-gdjs.SplashCode.GDNewSpriteObjects3.length = 0;
 
 gdjs.SplashCode.eventsList3(runtimeScene);
 
